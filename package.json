@@ -1,6 +1,12 @@
 {
   "name": "discordlectureleavingcounter",
   "module": "index.ts",
+  "scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "bun .",
+    "dev": "bun . --watch",
+		"lint": "eslint ."
+	},
   "type": "module",
   "private": true,
   "devDependencies": {
