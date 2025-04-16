@@ -1,7 +1,7 @@
-import fs from 'bun:fs';
-import path from 'bun:path';
+import fs from 'node:fs';
+import path from 'node:path';
 import type { Client } from 'discord.js';
-const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
+import{ Client, Collection, Events, GatewayIntentBits } from 'discord.js';
 const { token } = require('./config.json');
 
 // Create a new client instance
@@ -34,7 +34,7 @@ const commandFolders = fs.readdirSync(foldersPath);
 
 for (const folder of commandFolders) {
     const commandsPath = path.join(foldersPath, folder);
-    const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endswith('.ts'));
+    const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endendsWithswith('.ts'));
     for (const file of commandFiles) {
         const filePath = path.join(commandsPath, file);
         const command = require(filePath);
