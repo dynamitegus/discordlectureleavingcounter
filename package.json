@@ -2,11 +2,11 @@
   "name": "discordlectureleavingcounter",
   "module": "index.ts",
   "scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "bun .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bun .",
     "dev": "bun . --watch",
-		"lint": "bunx eslint ."
-	},
+    "lint": "bunx eslint ."
+  },
   "type": "module",
   "private": true,
   "devDependencies": {
@@ -17,6 +17,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "discord-api-types": "^0.37.120",
     "discord.js": "^14.18.0"
   }
 }
